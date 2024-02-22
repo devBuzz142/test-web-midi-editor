@@ -1,13 +1,21 @@
-import { useState } from "react";
+import styled from "@emotion/styled";
 
-function App() {
-  const [count, setCount] = useState(0);
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+`;
 
+const App = () => {
   return (
-    <>
-      <div>hello</div>
-    </>
+    <div>
+      <Container>hello2</Container>
+    </div>
   );
-}
+};
 
 export default App;
